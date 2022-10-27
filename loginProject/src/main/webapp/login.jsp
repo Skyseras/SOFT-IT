@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Sign Up Form by Colorlib</title>
+	<link rel="stylesheet" href="alert/dist/sweetalert.css">
 
 <!-- Font Icon -->
 <link rel="stylesheet"
@@ -76,6 +77,13 @@
 	<!-- JS -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		var status = document.getElementById("status").value;
+		if (status=="failed") {
+			swal("Sorry","Wrong password or email","failed"')
+		}
+	</script>
 </body>
 <!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
